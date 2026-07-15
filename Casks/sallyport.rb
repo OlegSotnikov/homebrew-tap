@@ -1,6 +1,6 @@
 cask "sallyport" do
-  version "0.8.11"
-  sha256 "a568d1e9d4fb62e1efb9e87872c967382d564e96ca47df5142abafcbdcd00b10"
+  version "0.8.12"
+  sha256 "9fc0b6b61b2e5ea9516fad6df38afbc3acba93c7bb8674e70121afdfa9e430f3"
 
   url "https://sallyport.dev/downloads/Sallyport-#{version}.dmg",
       verified: "sallyport.dev/downloads/"
