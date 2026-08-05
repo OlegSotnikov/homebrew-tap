@@ -12,22 +12,22 @@ class JcRs < Formula
   on_macos do
     on_arm do
       url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.1.0/jc-rs-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "f2a8fcbd7b9a9fdd6628c7ec520f7254c4d376d448cddf4cacc08a2ef0035d5c"
+      sha256 "7a8050427cd761570fe31c5f747a063727ecf2a747d7c47a3e210138ab34d684"
     end
     on_intel do
       url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.1.0/jc-rs-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "9ad2367903db11057a19dad52482dd3f8afb5a873436c0505386cb98b38cc81a"
+      sha256 "247790cf5bc72c709e4ea61ebbc28e1f5a16c28d372ff0e5640be29d6a1ee48d"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.1.0/jc-rs-v0.1.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4c6acdecb73a29722cbe13e65468056f2fb674dc8dc08bdf6c0fb91895c2463f"
+      sha256 "46f07446043cc42978231509d3ddd687a71e843bb9dd61988233a1c8221e2639"
     end
     on_intel do
       url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.1.0/jc-rs-v0.1.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "208c0a54e76e6c6c2632c67fcb18b412bc848e3c1192b28e347d091bba167e6c"
+      sha256 "9f424ce5e4275cbfffc0f6e85bb6eeb0f1fd1bd960ae08f0ed15134b2ffa8799"
     end
   end
 
