@@ -20,8 +20,8 @@
 # cask предлагал бы одно, Sparkle другое, и на площадке оказались бы
 # две версии одного продукта в зависимости от того, чем ставили.
 cask "ply" do
-  version "0.1.26"
-  sha256 "77cc65f9138809de6fed0fbc00a8e8d683b669298da0dc640bd7f21b48286826"
+  version "0.1.28"
+  sha256 "5f7f9c79aa7417fca8ad0e71c440c2e43213eca59a18489bc4f972e473a559aa"
 
   url "https://ply.network/downloads/ply-#{version}.dmg",
       verified: "ply.network/downloads/"
