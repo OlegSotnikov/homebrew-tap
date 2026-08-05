@@ -20,8 +20,8 @@
 # cask предлагал бы одно, Sparkle другое, и на площадке оказались бы
 # две версии одного продукта в зависимости от того, чем ставили.
 cask "ply" do
-  version "0.1.17"
-  sha256 "523613663ea76a0122f889d032d3f70272d36180b0034d20ce5e56482db07114"
+  version "0.1.23"
+  sha256 "84c6dd648aed000455e54f19aadf287f86763a8eb14711ad973d36a615347e1d"
 
   url "https://ply.network/downloads/ply-#{version}.dmg",
       verified: "ply.network/downloads/"
@@ -36,6 +36,18 @@ cask "ply" do
 
   # Приложение обновляет себя само подписанным Sparkle.
   auto_updates true
+
+  # ТОЛЬКО APPLE SILICON, И ЭТО ОБЪЯВЛЕНО, А НЕ ПОДРАЗУМЕВАЕТСЯ.
+  #
+  # Выпуск закреплён на arm64 (`mac/ci/release.sh`: EXPECTED_ARCH), но cask
+  # об этом молчал. На Intel-маке `brew install --cask ply` поставил бы
+  # приложение, которое не запускается, а macOS отказала бы немо — через
+  # launchd, без падения и без записи в журнале. Ровно в такую тишину
+  # владелец упёрся 05.08.2026 по другой причине, и час ушёл на поиск.
+  #
+  # Объявленное требование превращает это в одну понятную строку от brew
+  # ещё до загрузки.
+  depends_on arch: :arm64
   depends_on macos: :sonoma
 
   app "ply.app"
