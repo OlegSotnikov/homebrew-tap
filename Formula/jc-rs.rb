@@ -6,28 +6,28 @@
 class JcRs < Formula
   desc "Convert the output of command-line tools, file formats and strings to JSON"
   homepage "https://jc-rs.com"
-  version "0.3.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.3.1/jc-rs-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "8c4043569ce0c7a5935cbbd86515bf043f0683013d42505f947c7f32d9a93df1"
+      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.2.0/jc-rs-v0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "75e086c12f9d06e9b74baa2400aa61ef2a84cdaf877e8a066cf6e6d8d885c98f"
     end
     on_intel do
-      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.3.1/jc-rs-v0.3.1-x86_64-apple-darwin.tar.gz"
-      sha256 "4e58c7ad63c321cbd2df681d9ab6999a6d764b447cbf9f95baeab833554eecb4"
+      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.2.0/jc-rs-v0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "ed8a83d1025530d28948dd1fedbee45481df60d01228d57239fe30e79c8f0077"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.3.1/jc-rs-v0.3.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "6e74fb169e5344b3ffec48159b3c3c0938db46b6c4b6957fbd6f602ac08f47c1"
+      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.2.0/jc-rs-v0.2.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "7b9c7463505b952658429c152fbaca10a3b80d9fd94398cef721f681e51a9966"
     end
     on_intel do
-      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.3.1/jc-rs-v0.3.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "6ab081408ad62c877ac632883c1e1fabbbfba6bf45c5a9447fc9be240eb1e6a9"
+      url "https://github.com/OlegSotnikov/jc-rs/releases/download/v0.2.0/jc-rs-v0.2.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "013ba5fc20b9d85309168d910bb4253a471fd3ef125b17ae09873631d773a1e3"
     end
   end
 
